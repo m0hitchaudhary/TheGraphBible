@@ -1,4 +1,4 @@
-# 02: How to Represent a Graph in Code
+# 03: How to Represent a Graph in Code
 
 Once we understand what a graph is, the next crucial step is figuring out how to store it in memory. The choice we make here directly impacts the performance and memory usage of our graph algorithms, so it's a critical decision.
 

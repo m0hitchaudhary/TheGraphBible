@@ -10,7 +10,6 @@ The three most common representations are the **Adjacency Matrix**, **Adjacency 
 
 Throughout this section, we'll use this simple undirected and unweighted graph to compare the different representations:
 
-![Simple Graph Example](../images/simple-graph.png)
 
 - **Vertices (Nodes):** `{A, B, C, D}` mapped to `{0, 1, 2, 3}`
 - **Edges (Connections):** `{(A,B), (B,C), (B,D), (C,D)}`
@@ -122,10 +121,10 @@ int main() {
     std::cout << std::endl;
     return 0;
 }
+```
 
-
-###Python
-
+#### Python (Adjacency List)
+```
 from collections import defaultdict
 
 adj = defaultdict(list)
@@ -144,3 +143,4 @@ adj[3].append(2)
 
 print(f"Neighbors of vertex 1: {adj[1]}")
 # Output: Neighbors of vertex 1: [0, 2, 3]
+```

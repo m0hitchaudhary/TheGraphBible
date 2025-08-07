@@ -1,4 +1,4 @@
-# 01: What is a Graph? An Intuitive Introduction
+# 01: What is a Graph? An Introduction
 
 When I first started learning data structures, graphs felt abstract and a bit intimidating. The definitions were dry, the code was unfamiliar, and it didn’t really “click” at first. But then I realized — graphs aren’t just a computer science concept. They’re everywhere.
 

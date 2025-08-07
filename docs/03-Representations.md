@@ -124,7 +124,7 @@ int main() {
 ```
 
 #### Python (Adjacency List)
-```
+```python
 from collections import defaultdict
 
 adj = defaultdict(list)

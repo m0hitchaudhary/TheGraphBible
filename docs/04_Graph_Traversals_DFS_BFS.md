@@ -19,11 +19,11 @@ BFS explores the graph level by level. It starts at a source node and explores a
 
 Imagine dropping a stone in a pond — the ripples spread out level by level. That’s BFS in action.
 
-####How to Think with BFS
+#### How to Think with BFS
 
 BFS uses a **queue** to keep track of nodes to visit next. Because queues follow First-In-First-Out (FIFO) logic, you always explore nodes in layers. You’ll also need a **visited array or set** to make sure each node is only processed once — no one wants to get stuck in an infinite loop!
 
-####When Should I Use BFS?
+#### When Should I Use BFS?
 
 Use BFS when:
 
@@ -31,13 +31,13 @@ Use BFS when:
 * You’re solving a **multi-source** shortest path problem.
 * You need to explore a graph level-by-level.
 
-####Why BFS Guarantees the Shortest Path:
+#### Why BFS Guarantees the Shortest Path:
 
 Because it visits all nodes at distance 1 before distance 2, and so on. The **first** time you reach the destination is the **shortest path** to it.
 
 ---
 
-###BFS Pattern Checklist
+### BFS Pattern Checklist
 
 | Use Case                          | BFS?  | Why?                                               |
 | --------------------------------- | ----- | -------------------------------------------------- |
@@ -47,7 +47,7 @@ Because it visits all nodes at distance 1 before distance 2, and so on. The **fi
 
 ---
 
-###C++ Implementation (Adjacency List)
+### C++ Implementation (Adjacency List)
 
 ```cpp
 #include <iostream>
@@ -77,7 +77,7 @@ void bfs(int V, vector<vector<int>>& adj, int start) {
 }
 ```
 
-###Python Implementation
+### Python Implementation
 
 ```python
 from collections import deque, defaultdict
@@ -101,14 +101,14 @@ def bfs(V, adj, start):
 
 ---
 
-###Time and Space Complexity (BFS)
+### Time and Space Complexity (BFS)
 
 * **Time Complexity:** `O(V + E)`
 * **Space Complexity:** `O(V)` — for the queue and visited array
 
 ---
 
-###Brownie Points
+### Brownie Points
 
 * **Common Mistake:** Don’t delay marking nodes as visited! Mark them right **after enqueueing**, not when dequeuing. Otherwise, they may be added to the queue multiple times, causing TLE.
 
@@ -121,7 +121,7 @@ def bfs(V, adj, start):
 
 ---
 
-###Practice Problem: Rotting Oranges (Amazon, Google, Microsoft)
+### Practice Problem: Rotting Oranges (Amazon, Google, Microsoft)
 
 > Given an `m x n` grid:
 >
@@ -133,7 +133,7 @@ def bfs(V, adj, start):
 
 **Intuition:** It’s a shortest path on an **implicit graph**. Multiple rotten oranges? → **Multi-source BFS!**
 
-####C++ Code (Rotting Oranges)
+#### C++ Code (Rotting Oranges)
 
 ```cpp
 int orangesRotting(vector<vector<int>>& grid) {
@@ -172,7 +172,7 @@ int orangesRotting(vector<vector<int>>& grid) {
 }
 ```
 
-####Python Code (Rotting Oranges)
+#### Python Code (Rotting Oranges)
 
 ```python
 from collections import deque
@@ -208,10 +208,8 @@ def orangesRotting(grid):
 
 ---
 
-###More BFS-Based Practice Problems
+### More BFS-Based Practice Problems
 
 * [ ] 01 Matrix (Find distance of nearest 0)
-* [ ] Word Ladder (Shortest word transformation)
-* [ ] Shortest path in a Binary Maze
-
-Coming up next: **Depth-First Search (DFS)** — the recursive explorer!
+* [ ] 02 Word Ladder (Shortest word transformation)
+* [ ] 03 Shortest path in a Binary Maze
